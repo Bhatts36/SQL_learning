@@ -30,22 +30,28 @@ The dataset contains transaction-level information, including invoice IDs, branc
 
 - **PostgreSQL** — Database management and SQL queries
 - **VS Code with SQLTools** — SQL development environment
+- **PSQL** — CSV data import
 - **Git & GitHub** — Version control and project documentation
 
 ## 📁 Project Structure
 
 ```text
-Mini_Project_1/
-├── 01_create_database.sql
-├── 02_create_table.sql
-├── 03_import_csv.sql
-├── Q01_overall_performance.sql
-├── Q02_product_line_revenue.sql
-├── ...
-└── README.md
+SQL_Learning/
+└── Mini_Project_1/
+    ├── README.md
+    ├── 01_create_database.sql
+    └── 02_create_table.sql
 ```
 
-Each business question will have its own SQL file containing the query used to investigate it.
+## ⚙️ Database Setup
+
+1. Created a PostgreSQL database named `supermarket_sales_db`.
+2. Created the `supermarket_sales` table using `02_create_table.sql`.
+3. Imported the CSV dataset using the `\copy` command through the PSQL terminal.
+
+The CSV header row was excluded during import using `HEADER TRUE`.
+
+**Note:** The CSV file is stored locally and is not included in this repository. The dataset can be downloaded from the Kaggle source linked above.
 
 ## 📊 Business Questions & Analysis
 
